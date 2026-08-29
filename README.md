@@ -1,5 +1,3 @@
-# thai-id-validator
-Thai National ID validator with lucky messages
 /**
  * Thai National ID Validator with Lucky Messages
  * ตรวจสอบเลขบัตรประชาชนไทย + ข้อความโชคดี
@@ -79,16 +77,5 @@ testCases.forEach(tid => {
     console.log(result.message);
   }
   console.log('-'.repeat(55));
-});✅ เลขบัตรถูกต้อง
-💰 ความรวย — เงินทองไหลมาเทมา ร่ำรวยมั่นคง
-🍀 ความโชคดี — โชคลาภเข้าข้างตลอดทาง
-✨ ดวงเด่น — ดวงชะตาเปิด เด่นทุกด้าน
-♥️ ความรัก — พบเจอคนที่ใช่ ความรักสมหวัง---
+});
 
-**ขั้นตอนต่อไป**
-
-1. สร้าง Repository บน GitHub ชื่อ `thai-id-validator`
-2. ส่งชื่อ repo มาให้ผม (เช่น `nachonattasit-hub/thai-id-validator`)
-3. ผมจะช่วย push ไฟล์ทั้งหมดขึ้นไปให้
-
-หรือจะคัดลอกไฟล์ไปวางเองก็ได้ครับ
