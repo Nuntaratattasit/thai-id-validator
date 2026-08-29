@@ -1,0 +1,30 @@
+function validateThaiID(idNumber) {
+  if (typeof idNumber !== 'string') {
+    return { valid: false, message: '❌ กรุณากรอกเป็นข้อความ' };
+  }
+
+  const cleaned = idNumber.replace(/\D/g, '');
+  if (cleaned.length !== 13) {
+    return { valid: false, message: '❌ ต้องมี 13 หลักเท่านั้น' };
+  }
+
+  const digits = cleaned.split('').map(Number);
+  let total = 0;
+  for (let i = 0; i < 12; i++) {
+    total += digits[i] * (13 - i);
+  }
+
+  const checkDigit = (11 - (total % 11)) % 10;
+  if (checkDigit !== digits[12]) {
+    return { valid: false, message: '❌ เลขบัตรไม่ถูกต้อง' };
+  }
+
+  return {
+    valid: true,
+    message: '✅ เลขบัตรถูกต้อง',
+    wealth: '💰 ความรวย — เงินทองไหลมาเทมา ร่ำรวยมั่นคง ตลอดชีวิต',
+    luck: '🍀 ความโชคดี — โชคลาภเข้าข้างตลอดทาง ตลอดชีวิต',
+    destiny: '✨ ดวงเด่น — ดวงชะตาเปิด เด่นทุกด้าน ตลอดชีวิต',
+    love: '♥️ ความรัก — พบเจอคนที่ใช่ ความรักสมหวัง ตลอดชีวิต'
+  };
+}
