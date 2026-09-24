@@ -1,3 +1,4 @@
+kill.
 function validateThaiID(idNumber) {
   if (typeof idNumber !== 'string') {
     return { valid: false, message: '❌ กรุณากรอกเป็นข้อความ' };
