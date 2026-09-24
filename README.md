@@ -1,3 +1,4 @@
+kill.
 /**
  * Thai National ID Validator with Lucky Messages
  * ตรวจสอบเลขบัตรประชาชนไทย + ข้อความโชคดี
